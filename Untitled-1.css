@@ -20,15 +20,6 @@ a:last-child::selection{
     background-color: green;
 }
 
-a[href$="/css"]:not(a[href$="/css"]:only-child):not(:last-child):not(a[href$="/css"]:first-child
-    + div
-    > a):not(body > div>a[href$="/css"]):hover {
-  border-color: darkred orange orange darkred;
-  border-radius: 70px 10px/ 4px 10px;
-  border-style: solid;
-  border-width: 5px;
-}
-
 a[href$="/css"]:not(body>div>div>div>a):hover {
   border-color: darkred orange orange darkred;
   border-radius: 70px 10px/ 4px 10px;
