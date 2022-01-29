@@ -1,0 +1,43 @@
+body>div{
+    background: repeating-linear-gradient(45deg,#7fffd4 10%, #f0ffff 30%);
+}
+
+a[href*=htmlweb]{
+    color:#8b00ff;
+}
+
+div>a[href*=htmlweb]:first-child {
+    background: radial-gradient(at center bottom,#f00 20%,#4a2cb8 30%);
+}
+
+a~a:visited{
+    color: yellow;
+}
+
+a:last-child::selection{
+    font-weight: 900;
+    color:red; 
+    background-color: green;
+}
+
+a[href$="/css"]:not(a[href$="/css"]:only-child):not(:last-child):not(a[href$="/css"]:first-child
+    + div
+    > a):not(body > div>a[href$="/css"]):hover {
+  border-color: darkred orange orange darkred;
+  border-radius: 70px 10px/ 4px 10px;
+  border-style: solid;
+  border-width: 5px;
+}
+
+a[href$="/css"]:not(body>div>div>div>a):hover {
+  border-color: darkred orange orange darkred;
+  border-radius: 70px 10px/ 4px 10px;
+  border-style: solid;
+  border-width: 5px;
+}
+
+div>a:last-child::selection{
+    font-weight: bold;
+    color:red;
+    background-color: green ;
+}
